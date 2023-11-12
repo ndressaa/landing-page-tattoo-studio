@@ -1,0 +1,211 @@
+body {
+  background-color: var(--black-bg);
+  color: var(--text);
+}
+
+/* header */
+header {
+  display: flex;
+  height: 140px;
+  padding: 30px 120px;
+  gap: 40px;
+  font-family: var(--text-font);
+  margin-bottom: 20px;
+}
+
+span.logo {
+  font-family: var(--display-font);
+  font-size: 3rem;
+}
+
+span.logo a {
+  display: block;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+nav ul {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  gap: 80px;
+}
+
+nav ul li a {
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+/* banner */
+#banner {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  height: calc(100vh - 160px);
+}
+
+#banner img {
+  width: 100%;
+  max-width: 480px;
+  height: 100%;
+  object-fit: cover;
+  overflow-x: visible;
+}
+
+#banner h1 {
+  font-family: var(--display-font);
+  font-size: 3.4rem;
+  position: relative;
+  bottom: 90px;
+  right: 60px;
+}
+
+#banner h1 span {
+  color: var(--yellow-accent);
+}
+
+/* sobre */
+#sobre div {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+#sobre img {
+  width: 100%;
+  height: 100%;
+  max-width: 400px;
+  max-height: 500px;
+  object-fit: cover;
+}
+
+/* vantagens */
+#vantagens div {
+  padding-top: 20px;
+}
+
+#vantagens dl {
+  display: flex;
+  flex-direction: column;
+}
+
+#vantagens dt {
+  display: list-item;
+  list-style: inside;
+  margin-top: 20px;
+  font-weight: 500;
+  letter-spacing: 0.6px;
+}
+
+#vantagens dt::marker {
+  color: var(--yellow-accent);
+  font-size: 1rem;
+  content: '◆ ';
+  margin-right: 20px;
+}
+
+#vantagens dt#text {
+  color: pink;
+}
+
+/* galeria */
+#galeria div {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 30px;
+  flex-wrap: wrap;
+}
+
+#galeria img {
+  width: 28%;
+}
+
+/* artistas */
+.artist-profile {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  grid-template-areas: 'name description' 'image description';
+  margin-top: 30px;
+}
+
+.artist-profile h3 {
+  grid-area: name;
+  justify-self: center;
+  font-family: var(--display-font);
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.artist-profile img {
+  grid-area: image;
+  width: 100%;
+  max-width: 250px;
+  justify-self: center;
+  padding: 20px;
+}
+
+.artist-profile p {
+  grid-area: description;
+  display: flex;
+  align-items: center;
+  padding: 0 40px;
+}
+
+/* contato */
+#contato div.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#contato form {
+  font-family: var(--text-font);
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 480px;
+  margin-bottom: 60px;
+}
+
+#contato form label {
+  margin-top: 20px;
+  font-size: 1.2rem;
+}
+
+#contato form input,
+#contato form textarea {
+  margin-top: 5px;
+  background-color: transparent;
+  border: 1px solid var(--text);
+  font-family: var(--text-font);
+  font-size: 1rem;
+  line-height: 2rem;
+  color: var(--text);
+}
+
+#contato form input[type='submit'] {
+  margin-top: 30px;
+  background-color: var(--yellow-accent);
+  border: none;
+  color: var(--black-dimmed);
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 3rem;
+}
+
+/* footer */
+footer {
+  border-top: 1px solid var(--yellow-accent);
+  text-align: center;
+  font-family: var(--text-font);
+  font-weight: 400;
+  font-style: italic;
+  line-height: 3rem;
+}

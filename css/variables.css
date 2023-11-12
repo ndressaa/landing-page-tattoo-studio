@@ -1,0 +1,13 @@
+:root {
+  /* colors */
+  --black-bg: #0c000c;
+  --black-dimmed: #0d1017;
+  --grey: #1a1a26;
+
+  --text: #f2f2f2;
+  --yellow-accent: #f2b530;
+
+  /* fonts */
+  --display-font: 'Archivo Black', 'Arial Black', sans-serif;
+  --text-font: 'Roboto', 'Arial', sans-serif;
+}
